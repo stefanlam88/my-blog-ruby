@@ -14,3 +14,5 @@ b. create user_id foreign key in comments table
 a. create user_id foreign key in articles table
 9. create new article require selection of author/users list
 10. after creating, it will display author name
+11. Screenshot in public/requirement-2(part b).png
+12. Screenshot in public/requirement-2(part b - 2).png
