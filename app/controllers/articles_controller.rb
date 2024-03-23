@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.all
+    @articles = Article.includes(:user).search(params[:search])
   end
 
   def show
@@ -10,6 +10,7 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    @users = User.all
   end
 
   def create
@@ -24,6 +25,7 @@ class ArticlesController < ApplicationController
 
   def edit
     @article = Article.find(params[:id])
+    @users = User.all
   end
 
   def update
@@ -45,7 +47,7 @@ class ArticlesController < ApplicationController
 
   private
     def article_params
-      params.require(:article).permit(:title, :body, :status)
+      params.require(:article).permit(:title, :body, :status, :user_id)
     end
 
 end

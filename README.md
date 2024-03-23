@@ -9,3 +9,8 @@ b. create user_id foreign key in comments table
 5. Each comment need select which user from db
 6. Added display name for each comment
 7. Screenshot in public/requirement-2.png
+
+8. Added 1 migration script
+a. create user_id foreign key in articles table
+9. create new article require selection of author/users list
+10. after creating, it will display author name

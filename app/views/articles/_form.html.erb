@@ -19,6 +19,13 @@
     <%= form.label :status %><br>
     <%= form.select :status, Visible::VALID_STATUSES, selected: article.status || 'public' %>
     </div>
+
+    <div>
+    <%= form.label :user_id %><br>
+
+    <%= form.select :user_id, @users.pluck(:name, :id) %>
+    </div>
+    <br>
   
     <div>
       <%= form.submit %>
