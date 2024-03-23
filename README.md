@@ -16,3 +16,8 @@ a. create user_id foreign key in articles table
 10. after creating, it will display author name
 11. Screenshot in public/requirement-2(part b).png
 12. Screenshot in public/requirement-2(part b - 2).png
+
+#Requirement 3
+
+1. Screenshot requirement-3a.png & requirement-3b.png
+2. User able to search article authorname or title.

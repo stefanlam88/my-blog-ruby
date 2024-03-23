@@ -1,6 +1,10 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.includes(:user).search(params[:search])
+    if params[:search].present?
+      @articles = Article.includes(:user).search(params[:search])
+    else
+      @articles = Article.includes(:user)
+    end
   end
 
   def show
