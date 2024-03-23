@@ -22,7 +22,7 @@ a. create user_id foreign key in articles table
 1. Screenshot requirement-3a.png & requirement-3b.png
 2. User able to search article authorname or title.
 
-#Requirement 5
+#Requirement 4
 1. Gem 'kaminari' to support pagination
 2. API response in json with data and message
 3. Example response with 
