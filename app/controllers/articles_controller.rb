@@ -4,7 +4,8 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    @article = Article.includes(comments: :user).find(params[:id])
+    @users = User.all
   end
 
   def new
