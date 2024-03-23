@@ -1,24 +1,18 @@
-# README
+#Requirement 2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Link user table with comments table
+2. Added 2 migration script
+a. create user table
+b. create user_id foreign key in comments table
+3. Added validation in emails.
+4. Db seed 3 users: Alex 1, Stefan 2, Johnny 3
+5. Each comment need select which user from db
+6. Added display name for each comment
+7. Screenshot in public/requirement-2.png
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+8. Added 1 migration script
+a. create user_id foreign key in articles table
+9. create new article require selection of author/users list
+10. after creating, it will display author name
+11. Screenshot in public/requirement-2(part b).png
+12. Screenshot in public/requirement-2(part b - 2).png
