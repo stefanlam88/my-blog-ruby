@@ -22,8 +22,9 @@
 
     <div>
     <%= form.label :user_id %><br>
-
+    <% if @users.present? %>
     <%= form.select :user_id, @users.pluck(:name, :id) %>
+    <% end %>
     </div>
     <br>
   

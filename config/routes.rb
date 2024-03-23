@@ -11,5 +11,9 @@ Rails.application.routes.draw do
     resources :comments
   end
 
+  namespace :api do
+    resources :articles, only: [:index]
+  end
+
   # root "posts#index"
 end
